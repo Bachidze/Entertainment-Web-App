@@ -7,13 +7,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 1.2s;
 }
 
 body{
   background: #10141E;
   font-family: Outfit;
+  transition: 1.2s;
 }
 
 input{
   outline: none;
 }
+
+.pulse:hover{
+  transform: scale(1.3);
+}
+
+@media (width >= 600px){
+  .ph{
+    max-width: 328px;
+  }
+}
+@media (width >= 950px){
+  .ph{
+    max-width: 428px;
+  }
+}
+
+
+@media (width >= 680px){
+  .gridT{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+  }
+}
+@media (width >= 1024px){
+  .gridT{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  }
+}
+@media (width >= 1750px){
+  .gridT{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+  }
+}
+
