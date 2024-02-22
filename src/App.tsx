@@ -1,9 +1,10 @@
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import './App.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import dataJson from "./data.json";
 import { useState } from 'react';
+
 
 
 
@@ -55,7 +56,8 @@ function App() {
             color='gray'
             slidesPerView={1.6}
             pagination={{ clickable: true }}
-            modules={[Pagination]}
+            modules={[Pagination,Autoplay]}
+            autoplay={{ delay: 2500 }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             >
