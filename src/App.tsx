@@ -84,7 +84,7 @@ function App() {
         <h2 className='text-[28px] text-white mt-6 mb-6 md:text-[32px] xl:ml-[150px]'>Recommended for you</h2>
       </section>
 
-      <section  className='ml-4 xl:ml-[165px] xl:mr-[40px] gridT'>
+      <section  className='ml-4 xl:ml-[165px] xl:mr-[60px] gridT'>
         {data.map((el,index)=>(
           <div key={index}>
             <img loading='lazy' className='rounded-[8px]' src={el.thumbnail.regular?.small} alt={el.title} />
