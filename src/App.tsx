@@ -6,20 +6,7 @@ import dataJson from "./data.json";
 import { useState } from 'react';
 
 
-//interface Movie {
- // title: string;
- // year: number;
- // category: string;
- // rating: number;
- // thumbnail: {
- //   trending?: {
-   //   small: string;
-  //  };
-  //  regular?: {
-    //  small: string;
-  //  };
- // };
-//}
+
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -60,7 +47,7 @@ function App() {
         <div className='mb-4 mt-6 xl:ml-[150px]'>
           <h2 className='text-[20px] text-white md:text-[32px]'>Trending</h2>
         </div>
-        <div className='text-[white]'>
+        {!showTrendingOnly&&<div className='text-[white]'>
           <Swiper
           className='xl:min-w-[1000px] xl:ml-[150px] xl:mr-[150px]'
             loop
@@ -93,7 +80,7 @@ function App() {
           </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div>}
         <h2 className='text-[28px] text-white mt-6 mb-6 md:text-[32px] xl:ml-[150px]'>Recommended for you</h2>
       </section>
 
