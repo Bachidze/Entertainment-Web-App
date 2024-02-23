@@ -24,6 +24,17 @@ input{
   transform: scale(1.3);
 }
 
+.swiper-slide:hover .show{
+  opacity: 0.25;
+}
+
+.swiper-slide:hover .show1,
+.swiper-slide:hover .show2 {
+  opacity: 1;
+}
+
+
+
 @media (width >= 600px){
   .ph{
     max-width: 328px;
