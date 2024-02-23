@@ -68,9 +68,9 @@ function App() {
                     <img loading='lazy' className='rounded-[8px] ph' src={item.thumbnail.trending?.small} alt={item.title} />
                     <div className='absolute bottom-4 pl-4 flex gap-1 md:gap-2 md:bottom-5 '>
                       <h3 className='text-[12px] opacity-[0.75] font-normal md:text-[15px]'>{item.year}</h3>
-                      <div className='w-[127px] h-[54px] absolute bg-white bottom-[80px] left-[150px] opacity-0 cursor-pointer rounded-[28px] show'></div>
-                      <div className='w-[30px] h-[30px] bg-white rounded-[50px]  bottom-[92px] left-[160px] absolute cursor-pointer opacity-0 show1'></div>
-                      <div className='rounded-[50px]  bottom-[95px] left-[200px] absolute cursor-pointer opacity-0 z-50 show2'><h1>PLAY</h1></div>
+                      <div className='hidden xl:block w-[127px] h-[54px] absolute bg-white bottom-[80px] left-[150px] opacity-0 cursor-pointer rounded-[28px] show'></div>
+                      <div className=' hidden xl:block w-[30px] h-[30px] bg-white rounded-[50px]  bottom-[92px] left-[160px] absolute cursor-pointer opacity-0 show1'></div>
+                      <div className=' hidden xl:block rounded-[50px]  bottom-[95px] left-[200px] absolute cursor-pointer opacity-0 z-50 show2'><h1>PLAY</h1></div>
                       <h1 className='relative bottom-4 text-[25px] opacity-[0.75] md:bottom-[14px]'>.</h1>
                       <img loading='lazy' className='relative bottom-[11px] md:bottom-[8px]' src="/assets/Shape 2 (1).svg" alt="Cube2" />
                       <h3 className='text-[12px] opacity-[0.75] font-normal md:text-[15px]'>{item.category}</h3>
